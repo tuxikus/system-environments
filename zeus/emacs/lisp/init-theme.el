@@ -4,5 +4,5 @@
 
 (load-theme 'modus-operandi)
 
-(provide 'init-theme.el)
+(provide 'init-theme)
 ;;; init-theme.el ends here

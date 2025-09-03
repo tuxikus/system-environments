@@ -1,5 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
-(load "init-ui")
-(load "init-backup-files")
-(load "init-theme")
+(require 'init-ui)
+(require 'init-backup-files)
+(require 'init-theme)
+(require 'init-completion)

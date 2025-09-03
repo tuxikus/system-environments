@@ -4,5 +4,5 @@
 
 (setq make-backup-files nil)
 
-(provide 'init-backup-files.el)
+(provide 'init-backup-files)
 ;;; init-backup-files.el ends here
