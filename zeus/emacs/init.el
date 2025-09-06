@@ -171,7 +171,11 @@
   (avy-setup-default))
 
 (use-package go-mode
-  :ensure t)
+  :ensure t
+  :hook ((go-mode . (lambda ()
+				  (setq tab-width 4)
+				  (setq indent-tabs-mode 1)))
+		 (before-save . gofmt-before-save)))
 
 (use-package doom-modeline
   :ensure t
