@@ -13,6 +13,8 @@
   (scroll-bar-mode nil)
   (menu-bar-mode nil)
   (tool-bar-mode nil)
+  (make-backup-files nil)
+  (auto-save-default nil)
   (default-frame-alist '((font . "Iosevka Term-20")))
   (tab-always-indent 'complete)
   ;; corfu: Emacs 30 and newer: Disable Ispell completion function.
@@ -33,6 +35,10 @@
 
 (use-package eglot
   :hook (go-mode . eglot-ensure))
+
+(use-package eshell
+  :hook (eshell-first-time-mode . (lambda ()
+				     (eshell/alias "ll" "ls -lah"))))
 
 ;; external packages
 (use-package magit
